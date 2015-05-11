@@ -1,0 +1,36 @@
+@font-face{
+    font-family: 'odin rounded';
+    src:url("../fonts/Odin Rounded - Bold.otf");
+}
+body{
+	margin: 0;
+	font-family: odin rounded;
+}
+header{
+	height: 50px;
+	background-color: #333C4E;
+	position: fixed;
+	width: 100%;
+	float: top;
+	top: 0;
+}
+nav{
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px;
+	text-align: center;
+	color: #D6DAE3;
+	text-align: center;
+	margin-right: 20px;
+	text-decoration: none;
+}
+nav a{
+	text-decoration: none;
+	color: #D6DAE3;
+}
+.bar{
+	float: right;
+}
+nav:hover{
+	    border-bottom: 3px solid #FE3366;
+}

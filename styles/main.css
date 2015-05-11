@@ -1,0 +1,499 @@
+@font-face{
+    font-family: 'odin rounded';
+    src:url("../fonts/Odin Rounded - Bold.otf");
+}
+@font-face{
+    font-family: 'odin-light';
+    src:url("../fonts/Odin Rounded - Light.otf");
+}
+body{
+	margin: 0;
+    text-align: center;
+	font-family: 'odin rounded';
+}
+.wrapper {
+    width: 1100px;
+    text-align: left;
+    margin: 0px auto;
+}
+header{
+	height: 50px;
+	background-color: #333C4E;
+	position: fixed;
+	width: 100%;
+	float: top;
+	top: 0;
+}
+nav{
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px;
+	padding-top: 15px;
+	text-align: center;
+	color: #D6DAE3;
+	text-align: center;
+	margin-right: 20px;
+	text-decoration: none;
+}
+nav a{
+	text-decoration: none;
+	color: #D6DAE3;
+}
+.bar{
+	float: right;
+}
+nav:hover{
+	    border-bottom: 3px solid #FE3366;
+	    color: #6d7483;
+}
+div.title{
+	margin-top: 50px;
+	background-color: #F2F2F2;
+	height: 160px;
+	width: 100%;
+}
+div h1{
+	text-align: center;
+	color: #333C4E;
+	font-weight: bolder;
+}
+div h3{
+	text-align: center;
+	color: #4D4D4D;
+}
+.colors{
+	text-align: center; 	
+	color: #4D4D4D;
+	text-transform: uppercase;
+}
+.colors li{
+	display: inline-block;
+	margin-right: 30px;
+	border-left: 5px solid;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#tds{
+	border-color: #9FD823;
+}
+#cours{
+	border-color: #F0502A;
+}
+#examens{
+	border-color: #2A9ED4;
+}
+.semestre-table{	
+    position: relative;
+    top: 31px;
+	float: left;
+	width: 255px;
+}
+td{
+	text-align: center;
+	height: 40px;
+}
+tr{
+	height: 40px;
+}
+.semestre-table th{
+	background-color: #FE3366;
+	height: 30px;
+	color: #D6DAE3;
+}
+.semestre-table tr:nth-child(even){
+	background-color: #E6E6E6;
+	color: #333C4E;
+	text-transform: uppercase;
+}
+.semestre-table tr:nth-child(odd){
+	background-color: #F2F2F2;
+	color: #333C4E;
+	text-transform: uppercase;
+}
+.semestre-table tr:hover .numsem:hover, .nummatiere:hover {
+	background-color: #FE3366;
+	transition: 0.7s ease;
+	color: white;
+	padding-right: 50px;
+	
+}
+.main-table{
+    position: relative;
+    top: 15px;
+    float: right;
+	width: 805px;
+}
+.head{
+    background-color: #EE3464;
+}
+
+.main-table th{
+	color: #D6DAE3;
+}
+#author{
+	width: 90px;
+	padding-left: 7px;
+}
+#date{
+	width: 80px;
+	padding-left: 7px;
+}
+#color{
+	width: 4px;
+}
+.main-table tbody tr:nth-child(even){
+	background-color: #F2F2F2;
+	color: #333C4E;
+	text-transform: uppercase;
+}
+.main-table tbody tr:nth-child(odd){
+	background-color: #E6E6E6;
+	color: #333C4E;
+	text-transform: uppercase;
+}
+.type{
+	
+}
+
+/*little bar style*/
+.little_bar {
+	margin-right: 0px;
+}
+
+.little_bar li {
+    position: static;
+    float: right;
+    display: inline;
+    margin-right: 10px;
+}
+
+.little_bar li a, .addfiletopic{
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #333C4E;
+    padding-top: 5px;
+}
+.addfiletopic {
+    overflow: scroll;
+    position: relative;
+
+}
+.addfiletopic [type=file] {
+    cursor: inherit;
+    /*filter: alpha(opacity=0);*/
+    opacity: 0;
+    position: relative;
+    text-align: right
+    margin-left:20px;
+    width: 50px;
+}
+
+
+.matiere-in {
+	background-color: #520219;
+	color: white;
+
+}
+
+.semestre-table th {
+	text-align: center;
+	padding-right: 20px;
+}
+
+li {
+	list-style: none;
+}
+
+ul ul {
+	display: none;
+}
+
+a.backto {
+	text-decoration: none;
+	opacity: 0.5;
+	color: white;
+	float: left;
+	padding-left: 10px;
+}
+
+a.backto:hover {
+	opacity: 0.8;
+}
+
+.semester-in {
+	background-color: #b8113b;
+	color: white;
+}
+
+.tdtp {
+	background-color: #9FD823;
+}
+
+.cours{
+	background-color: #F0502A;
+}
+.examens{
+	background-color: #2A9ED4;
+}
+
+.threaduser, .threaddate {
+	font-style: italic;
+	font-size: 12px;
+	color: #787878;
+	font-weight: lighter;
+	font-family: odin-light;
+}
+
+.addtopicform {
+	width: 100%;
+	background-color: #EE3464;
+	margin-top: 20px;
+	color: white;
+}
+
+.inputaddtitletopic {
+	background-color: #EE3464;
+	width: 1000px;
+	border-style: none;
+	height: 30px;
+	color: white;
+	padding-left: 50px;
+	font-size: 14px;
+	font-family: odin rounded;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+}
+
+.addcontenttopic, .contenttopic {
+	background-color: #EDEDED;
+}
+
+.textareatopic {
+	background-color: #EDEDED;
+	width: 1000px;
+	border-style: none;
+	height: 200px;
+	font-family: odin rounded;
+	padding: 20px;
+	font-size: 16px;
+	color: #424242;
+	padding-left: 50px;
+}
+.inputaddtitletopic:focus {
+	border-style: none;
+}
+
+textarea { resize: vertical; }
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+.pathtotopic {
+    position: relative;
+    top: 12px;
+    right: 5px;
+    float: right;
+	/*padding-left: 500px;*/
+	opacity: 0.7;
+	font-size: 12px;
+	font-family: odin-light;
+}
+
+.userinfos {
+	width: 200px;
+	background-color: #BFBFBF;
+	height: 250px;
+	font-size: 12px;
+	font-family: odin-light;
+	color: #424242;
+	font-style: italic;
+}
+
+.linesep {
+	height: 2px;
+	background-color: #EE3464;
+	width: 100%;
+	margin-top: 50px;
+	color: #EE3464;
+	font-size: 14px;
+    text-align: center;
+}
+.contentpart {
+	color: #424242;
+}
+
+.commentform {
+	width: 1000px;
+	background-color: #EDEDED;
+	margin-top: 50px;
+	color: white;
+}
+.userinfoscom {
+	width: 120px;
+	background-color: #BFBFBF;
+	height: 80px;
+}
+
+.commentpart {
+	width: 880px;
+	background-color: #EDEDED;
+	color: #424242;
+	border-bottom: solid 2px #BFBFBF;
+
+}
+
+.contentcomment {
+    width: 100%;
+	margin-bottom: 10px;
+}
+
+.userinfos-name {
+	color: #EE3464;
+	font-style: normal;
+	font-family: odin rounded;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.nopost {
+	background-color: #EDEDED;
+	font-style: italic;
+	font-family: odin-light;
+	font-size: 13px;
+	height: 100px;
+    display: none;
+}
+
+.textarea{
+/*    outline: 1px solid red;*/
+}
+
+.textarea > textarea {
+    background-color: #F2F2F2;
+    font-size: 20px;
+    height: 110px;
+    width: 100%;
+    border: 0px solid #ADEDED;
+    border-radius: 2px;
+    margin-top: 10px;   
+}
+
+.postTitle {
+    color: #F2F2F2;
+    font-family: odin-light;
+    font-weight:800;
+    background-color: #EE3464;
+    height: 37px;
+    width: 90%;
+    border: 0px solid #ADEDED;
+    border-radius: 2px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.postFiles{
+    border: none;
+    font-size: 15px;
+    font-family: odin-light;
+    background-color: #EE3464;
+    color: white;
+    margin-top: 7px;
+    width: auto;
+}
+
+.postType{
+    width: auto;
+}
+.userinfos {
+	width: 200px;
+	background-color: #BFBFBF;
+	height: 250px;
+	font-size: 12px;
+	font-family: odin-light;
+	color: #424242;
+	font-style: italic;
+}
+
+.linesep {
+	height: 2px;
+	background-color: #EE3464;
+	width: 100%;
+	margin-top: 50px;
+	color: #EE3464;
+	font-size: 14px;
+    text-align: center;
+}
+.contentpart {
+	color: #424242;
+}
+
+.commentform {
+	width: 1000px;
+	background-color: #EDEDED;
+	margin-top: 50px;
+	color: white;
+}
+.userinfoscom {
+	width: 120px;
+	background-color: #E6E6E6;
+	height: 80px;
+}
+
+.commentpart {
+	width: 880px;
+	background-color: #f2f2f2;
+	color: #424242;
+    border-bottom: solid 2px #BFBFBF;
+
+}
+
+.contentcomment {
+    width: 100%; 
+    border-bottom: 5px black;
+}
+
+.userinfos-name {
+	color: #EE3464;
+	font-style: normal;
+	font-family: odin rounded;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.nopost {
+	background-color: #EDEDED;
+	font-style: italic;
+	font-family: odin-light;
+	font-size: 13px;
+	height: 100px;
+    display: none;
+}
+.comnt {
+
+      width: 820px; 
+      height:50px; 
+      display: block;
+      border: none;
+      color: black;
+      background-color:  #f2f2f2;
+      font-family: odin-light;
+      font-size: 20px;
+      position: relative;
+      margin-top: 10px;
+      outline: none;
+      left: 20px;
+      top: 15px;
+      resize: none;
+      overflow: hidden;
+}
+.sub{
+  background: #EE3464;
+  padding: 3px 9px 4px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
