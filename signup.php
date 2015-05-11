@@ -61,7 +61,7 @@
 	        <input type="password" id="repeatpwd" placeholder="REPEAT PASSWORD" name="pass2">
 	    </div>
 		   <div class="button-valid">
-		        <button class="button-signin">CLEAR</button>
+		        <button class="button-signin" type="reset">CLEAR</button>
 		        <input type="submit" class="button-register" value="SUBMIT">
 		   </div>
 		   
